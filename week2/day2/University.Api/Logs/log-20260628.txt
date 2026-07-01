@@ -1,0 +1,56 @@
+2026-06-28 21:30:29.215 +03:00 [INF] Starting up the University API...
+2026-06-28 21:32:45.241 +03:00 [INF] Starting up the University API...
+2026-06-28 21:32:46.080 +03:00 [INF] Now listening on: https://localhost:7218
+2026-06-28 21:32:46.083 +03:00 [INF] Now listening on: http://localhost:5181
+2026-06-28 21:32:46.259 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-06-28 21:32:46.260 +03:00 [INF] Hosting environment: Development
+2026-06-28 21:32:46.260 +03:00 [INF] Content root path: C:\Users\User\source\repos\University2\motaz-al-masri\week2\day1\UniversitySystem\University.Api
+2026-06-28 21:32:56.989 +03:00 [INF] HTTP GET / responded 404 in 27.4563 ms
+2026-06-28 21:33:16.807 +03:00 [INF] HTTP GET /swagger responded 301 in 4.5971 ms
+2026-06-28 21:33:17.031 +03:00 [INF] HTTP GET /swagger/index.html responded 200 in 204.1243 ms
+2026-06-28 21:33:17.132 +03:00 [INF] HTTP GET /swagger/index.js responded 200 in 1.6711 ms
+2026-06-28 21:33:17.205 +03:00 [INF] HTTP GET /swagger/index.css responded 200 in 108.2263 ms
+2026-06-28 21:33:17.217 +03:00 [INF] HTTP GET /swagger/swagger-ui-standalone-preset.js responded 200 in 155.3355 ms
+2026-06-28 21:33:17.217 +03:00 [INF] HTTP GET /swagger/swagger-ui.css responded 200 in 156.0379 ms
+2026-06-28 21:33:17.226 +03:00 [INF] HTTP GET /swagger/swagger-ui-bundle.js responded 200 in 164.2968 ms
+2026-06-28 21:33:17.629 +03:00 [INF] HTTP GET /swagger/favicon-32x32.png responded 200 in 2.7733 ms
+2026-06-28 21:33:17.642 +03:00 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 30.5900 ms
+2026-06-28 21:35:38.876 +03:00 [INF] Attempting to create a new student with email motaz.dev@example.com.
+2026-06-28 21:35:42.324 +03:00 [INF] Successfully created student with Email motaz.dev@example.com
+2026-06-28 21:35:42.831 +03:00 [INF] Source:[::1] Request: POST https localhost:7218/api/Students  {
+  "name": "Motaz Al Masri",
+  "email": "motaz.dev@example.com"
+} Responded with [200] in 4449ms
+2026-06-28 21:35:42.833 +03:00 [INF] HTTP POST /api/Students responded 200 in 4455.4752 ms
+2026-06-28 21:35:57.262 +03:00 [INF] Source:[::1] Request: POST https localhost:7218/api/Students  {
+  "name": "M",
+  "email": "motaz-wrong-email"
+} Responded with [400] in 62ms
+2026-06-28 21:35:57.264 +03:00 [INF] HTTP POST /api/Students responded 400 in 65.8598 ms
+2026-06-28 21:36:49.606 +03:00 [INF] Incoming request to CREATE Course.
+2026-06-28 21:36:49.697 +03:00 [INF] Course Advanced Backend Development created successfully.
+2026-06-28 21:36:49.700 +03:00 [INF] Source:[::1] Request: POST https localhost:7218/api/Courses  {
+  "name": "Advanced Backend Development",
+  "weight": 85
+} Responded with [200] in 116ms
+2026-06-28 21:36:49.701 +03:00 [INF] HTTP POST /api/Courses responded 200 in 117.7106 ms
+2026-06-28 21:37:02.400 +03:00 [INF] Source:[::1] Request: POST https localhost:7218/api/Courses  {
+  "name": "C",
+  "weight": 150
+} Responded with [400] in 2ms
+2026-06-28 21:37:02.402 +03:00 [INF] HTTP POST /api/Courses responded 400 in 4.6371 ms
+2026-06-28 21:37:15.078 +03:00 [INF] Incoming request to GET Course 1
+2026-06-28 21:37:15.476 +03:00 [INF] Source:[::1] Request: GET https localhost:7218/api/Courses/1   Responded with [200] in 408ms
+2026-06-28 21:37:15.478 +03:00 [INF] HTTP GET /api/Courses/1 responded 200 in 410.7464 ms
+2026-06-28 21:37:25.290 +03:00 [INF] Incoming request to DELETE Course 1
+2026-06-28 21:37:25.345 +03:00 [INF] Course with ID 1 deleted.
+2026-06-28 21:37:25.353 +03:00 [INF] Source:[::1] Request: DELETE https localhost:7218/api/Courses/1   Responded with [200] in 69ms
+2026-06-28 21:37:25.358 +03:00 [INF] HTTP DELETE /api/Courses/1 responded 200 in 75.4331 ms
+2026-06-28 21:37:30.140 +03:00 [INF] Incoming request to GET Course 1
+2026-06-28 21:37:30.146 +03:00 [ERR] Course with ID 1 not found.
+2026-06-28 21:43:21.607 +03:00 [INF] Source:[::1] Request: GET https localhost:7218/api/Courses/1   Responded with [404] in 351467ms
+2026-06-28 21:43:21.614 +03:00 [INF] HTTP GET /api/Courses/1 responded 404 in 351475.3023 ms
+2026-06-28 21:43:21.616 +03:00 [INF] Incoming request to GET Course 1
+2026-06-28 21:43:21.632 +03:00 [ERR] Course with ID 1 not found.
+2026-06-28 21:43:27.637 +03:00 [INF] Source:[::1] Request: GET https localhost:7218/api/Courses/1   Responded with [404] in 6021ms
+2026-06-28 21:43:27.639 +03:00 [INF] HTTP GET /api/Courses/1 responded 404 in 6023.8025 ms
